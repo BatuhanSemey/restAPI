@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:4000/api/items'
+const API_URL = 'http://localhost:7000/api/items'
 
 document.getElementById('dataForm').addEventListener('submit', async (event) => {
     event.preventDefault()

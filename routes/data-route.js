@@ -7,7 +7,7 @@ const {
     postData,
     deleteData,
     updateData
-} = require('../backend/controllers/data-controller');
+} = require('../controllers/data-controller');
 
 router.get('/', getMain);
 router.get('/api/items', getData);
