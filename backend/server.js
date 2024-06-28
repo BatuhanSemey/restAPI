@@ -2,8 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose')
+require('dotenv').config()
 
-const PORT = 7000;
+const port = process.env.PORT || 7000
 const db = 'mongodb+srv://Batuhan:subaru667@batuhan.ucjhrg3.mongodb.net/restAPI?retryWrites=true&w=majority&appName=Batuhan'
 
 const app = express();
@@ -21,8 +22,8 @@ app.set('views', path.join(__dirname, '../frontend/views'));
 
 app.use(routesData);
 
-app.listen(4000, () => {
-    console.log(`Сервер стартовал на порту http://localhost:4000`);
+app.listen(port, () => {
+    console.log(`Сервер стартовал на порту http://localhost:${port}`);
 });
 
 mongoose
