@@ -1,4 +1,4 @@
-const API_URL = 'https://restapi-11.onrender.com/api/items'
+const API_URL = 'https://restapi-12.onrender.com/api/items'
 
 document.getElementById('dataForm').addEventListener('submit', async (event) => {
     event.preventDefault()
